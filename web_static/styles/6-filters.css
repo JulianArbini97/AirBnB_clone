@@ -52,10 +52,34 @@
     margin-bottom: 5px;
 }
 
-.popover {
-    background-color: #FAFAFA
-    border-right: 1px solid #DDDDDD;
+.popover{
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
     border-radius: 4px;
-    display: inline-block;
-    position: relative;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 2;
+    /* display es para que aparezca cuando se pasa el mouse */
+    display: none;
+    /* para que no me ponga ningun tipo de lista */
+    list-style-type: none;
+}
+
+.popover h2{
+    font-size: 16px;
+    margin-bottom: 1px;
+    line-height: 1;
+    margin-left: -15px;
+}
+
+.popover ul{
+    /* para que no me ponga ningun tipo de lista */
+    list-style-type: none;
+    margin-left: -35px;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    /* Hace aparecer el cuadro cuando pasas mouse */
+    display: block;
 }
