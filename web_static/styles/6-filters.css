@@ -52,7 +52,7 @@
     margin-bottom: 5px;
 }
 
-.popover{
+.popover {
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
@@ -63,6 +63,8 @@
     display: none;
     /* para que no me ponga ningun tipo de lista */
     list-style-type: none;
+    /* Para que overlapee al contenido de la pagina */
+    position: relative;
 }
 
 .popover h2{
