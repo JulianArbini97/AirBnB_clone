@@ -11,6 +11,21 @@ import pep8
 
 class TestingBaseModel(unittest.TestCase):
     """ BaseModel class - tests """
+
+    @classmethod
+    def setup(self):
+        self.base1 = BaseModel()
+        self.name = "Helena"
+        self.base1.my_number = 35
+
+    @classmethod
+    def tearDown(self):
+        del self.base1
+        try:
+            os.remove("file.json")
+        except FileNotFoundError:
+            pass
+
     def test_PreData1(self):
         """ Test of the PreData """
         PreData1 = BaseModel("Holberton")
